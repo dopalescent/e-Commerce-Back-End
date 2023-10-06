@@ -39,7 +39,7 @@ Challenge 13
   "product_name" - a string of characters giving an informal name to the entry, assigned manually by the user
   "price" - a decimal value, assigned manually by the user
   "stock" - an integer value, assigned manually by the user
-  "category_id" - an integer value matching the "id" of an entry in the "category" table, assigned manually by the user, "null" entries are accepted
+  "category_id" - an integer value referencing the "id" of an entry in the "category" table, assigned manually by the user, "null" entries are accepted
 
   #### - "tag"
   Entries in the "tag" table have two attributes:
@@ -49,8 +49,8 @@ Challenge 13
   #### - "product_tag"
   Entries in the "product_tag" table have three attributes:
   "id" - an integer value automatically assigned when the entry is created
-  "product_id" - an integer value matching the "id" of an entry in the "product" table, assigned manually by the user, "null" entries are accepted
-  "tag_id" - an integer value matching the "id" of an entry in the "tag" table, assigned manually by the user, "null" entries are accepted
+  "product_id" - an integer value referencing the "id" of an entry in the "product" table, assigned manually by the user, "null" entries are accepted
+  "tag_id" - an integer value referencing the "id" of an entry in the "tag" table, assigned manually by the user, "null" entries are accepted
 
   This table allows many "tag" entries to be belong to many "product" entries. While this table is not accessible by API request at this time, it is still functional within the database upon entering seed data.
 
