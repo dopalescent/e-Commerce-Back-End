@@ -28,29 +28,29 @@ Challenge 13
 
   #### - "category"
   Entries in the "category" table have two attributes:
-  "id" - an interger value automatically assigned when the entry is created
+  "id" - an integer value automatically assigned when the entry is created
   "category_name" - a string of characters giving an informal name to the entry, assigned manually by the user
   
   GET requests to this table will also return product entries within each returned category.
 
   #### - "product"
   Entries in the "product" table have five attributes:
-  "id" - an interger value automatically assigned when the entry is created
+  "id" - an integer value automatically assigned when the entry is created
   "product_name" - a string of characters giving an informal name to the entry, assigned manually by the user
   "price" - a decimal value, assigned manually by the user
-  "stock" - an interger value, assigned manually by the user
-  "category_id" - an interger value matching the "id" of an entry in the "category" table, assigned manually by the user, "null" entries are accepted
+  "stock" - an integer value, assigned manually by the user
+  "category_id" - an integer value matching the "id" of an entry in the "category" table, assigned manually by the user, "null" entries are accepted
 
   #### - "tag"
   Entries in the "tag" table have two attributes:
-  "id" - an interger value automatically assigned when the entry is created
+  "id" - an integer value automatically assigned when the entry is created
   "tag_name" - a string of characters giving an informal name to the entry, assigned manually by the user
 
   #### - "product_tag"
   Entries in the "product_tag" table have three attributes:
-  "id" - an interger value automatically assigned when the entry is created
-  "product_id" - an interger value matching the "id" of an entry in the "product" table, assigned manually by the user, "null" entries are accepted
-  "tag_id" - an interger value matching the "id" of an entry in the "tag" table, assigned manually by the user, "null" entries are accepted
+  "id" - an integer value automatically assigned when the entry is created
+  "product_id" - an integer value matching the "id" of an entry in the "product" table, assigned manually by the user, "null" entries are accepted
+  "tag_id" - an integer value matching the "id" of an entry in the "tag" table, assigned manually by the user, "null" entries are accepted
 
   This table allows many "tag" entries to be belong to many "product" entries. While this table is not accessible by API request at this time, it is still functional within the database upon entering seed data.
 
